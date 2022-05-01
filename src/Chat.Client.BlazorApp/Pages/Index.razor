@@ -31,20 +31,20 @@
             <div class="row">
                 <div class="col-12 col-lg-5 col-xl-3 border-end">
                     @foreach (var onlineUser in Model.OnlineUsers)
-                   {
-                       <ChatUser User="onlineUser" />
-                   }
-                    
+                    {
+                        <ChatUser User="onlineUser" />
+                    }
+
                     <hr class="d-block d-lg-none mt-1 mb-0">
                 </div>
 
                 <div class="col-12 col-lg-7 col-xl-9">
                     <div class="position-relative">
                         <div class="chat-messages p-4">
-                           @foreach (var message in Model.Messages)
-                           {
-                               <ChatMessage CurrentUser="@Model.CurrentUser" Message="message" />
-                           }
+                            @foreach (var message in Model.Messages)
+                            {
+                                <ChatMessage CurrentUser="@Model.CurrentUser" Message="message" />
+                            }
                         </div>
                     </div>
 
