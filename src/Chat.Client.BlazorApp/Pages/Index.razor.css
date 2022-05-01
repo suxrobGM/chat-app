@@ -1,0 +1,19 @@
+﻿.chat-online {
+    color: #34ce57
+}
+
+.chat-offline {
+    color: #e4606d
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    max-height: 800px;
+    overflow-y: scroll
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6 !important;
+}

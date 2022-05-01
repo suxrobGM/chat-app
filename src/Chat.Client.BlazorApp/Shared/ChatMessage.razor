@@ -1,0 +1,27 @@
+﻿
+
+@{
+    var rightSideClass = Message == CurrentUser ? "chat-message-right" : "chat-message-left";
+    var marginClass = Message == CurrentUser ? "me-3" : "ms-3";
+}
+
+<div class="@rightSideClass pb-4">
+    <div>
+        <div class="avatar" alt="Avatar user">
+            <span class="fw-bold fs-4 text-white">S</span>
+        </div>
+        <div class="text-muted small text-nowrap mt-2">2:42 am</div>
+    </div>
+    <div class="flex-shrink-1 bg-light rounded py-2 px-3 @marginClass">
+        <div class="fw-bold mb-1">@Message</div>
+        @Message
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public string Message { get; set; }
+
+    [Parameter, EditorRequired]
+    public string CurrentUser { get; set; }
+}
