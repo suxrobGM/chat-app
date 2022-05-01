@@ -2,7 +2,7 @@
 
 namespace Chat.Client;
 
-internal interface IChatClient : IAsyncDisposable
+public interface IChatClient : IAsyncDisposable
 {
     event EventHandler<Message> OnMessageReceived;
     event EventHandler<User> OnConnected;
