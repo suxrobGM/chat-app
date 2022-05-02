@@ -73,5 +73,6 @@ public class IndexViewModel : ViewModelBase
         }
 
         await _client.SendMessageAsync(CurrentMessage);
+        CurrentMessage = string.Empty;
     }
 }
