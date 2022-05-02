@@ -19,3 +19,6 @@ $ dotnet run --project Chat.Client.BlazorApp
 ```
 
 By default, the server runs on localhost https://127.0.0.1:7281 and the client app runs on https://127.0.0.1:7212
+
+# Demo
+![Screenshot](https://github.com/suxrobGM/ChatApp/blob/main/screenshot_1.png?raw=true)
